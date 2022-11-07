@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Bg_initial from "../../assets/bg_initial.svg";
 import Bg_about from "../../assets/about_kopili.svg";
 import Bg_verde from "../../assets/bglhverde.svg";
-import Bg_azul from "../../assets/bglhazu.svg"
+import Bg_azul from "../../assets/bglhazu.svg";
 export const ContainerHeader = styled.div``;
 
 export const ContainerInitial = styled.div`
@@ -48,7 +48,7 @@ export const About = styled.div`
     }
   }
 
-  #ourTeam{
+  #ourTeam {
     display: flex;
     flex-direction: column;
     height: 50%;
@@ -56,26 +56,70 @@ export const About = styled.div`
     background-size: cover;
   }
   #button_bg2 {
-      width: 379.32px;
-      height: 109px;
-      margin-top: 15%;
-      margin-left: 8%;
-      cursor: pointer;
-      }
-      #team{
-        display: flex;
-        flex-direction: column;
-        background-color: gray;
-        height: 50%;
-        margin-top: 3%;
-        #cardTeam{
-            display: flex;
-            flex-direction: column;
-            width: 20%;
-            height: 100%;
-            background-color: red;
-        }
-      }
+    width: 379.32px;
+    height: 109px;
+    margin-top: 15%;
+    margin-left: 8%;
+    cursor: pointer;
+  }
+  #team {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    margin-top: 3%;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
+export const Img_Card = styled.img`
+  
+`;
+
+export const Img_Div = styled.div`
+  display: flex;
+  height: 55%;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const ConteudoText = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 45%;
+  width: 100%;
+  margin-left: 10%;
+
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-bottom: 5%;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-bottom: 10%;
+  }
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 `;
 
 export const TextKopili = styled.div`
@@ -84,16 +128,13 @@ export const TextKopili = styled.div`
   height: 50%;
   padding-left: 10%;
   margin-top: 5%;
-  p {
+  p{
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 36px;
-    color: #ffffff;
+    color: #fff;
   }
 `;
 
-
-export const Img_Kopili_About = styled.img`
-  
-`
+export const Img_Kopili_About = styled.img``;
