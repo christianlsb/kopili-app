@@ -34,9 +34,9 @@ export const About = styled.div`
     #button_bg {
       width: 379.32px;
       height: 109px;
-      border: 5px solid #000000;
       margin-top: 10%;
-      margin-left: 5%;
+      margin-left: 8%;
+      cursor: pointer;
       h2 {
         font-style: normal;
         font-weight: 600;
@@ -55,6 +55,27 @@ export const About = styled.div`
     background-image: url(${Bg_azul});
     background-size: cover;
   }
+  #button_bg2 {
+      width: 379.32px;
+      height: 109px;
+      margin-top: 15%;
+      margin-left: 8%;
+      cursor: pointer;
+      }
+      #team{
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        height: 50%;
+        margin-top: 3%;
+        #cardTeam{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: 100%;
+            background-color: red;
+        }
+      }
 `;
 
 export const TextKopili = styled.div`
@@ -71,3 +92,8 @@ export const TextKopili = styled.div`
     color: #ffffff;
   }
 `;
+
+
+export const Img_Kopili_About = styled.img`
+  
+`

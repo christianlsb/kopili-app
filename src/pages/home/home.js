@@ -1,5 +1,7 @@
 import Header from "../../components/header/header";
-import { ContainerHeader, TextKopili,ContainerInitial, About } from "./style";
+import { ContainerHeader,Img_Kopili_About, TextKopili,ContainerInitial, About } from "./style";
+import Kopili_About from '../../assets/kopili_about.svg'
+import Kopili_Time from '../../assets/nosso_time.svg'
 function Home() {
   return (
     <>
@@ -10,7 +12,7 @@ function Home() {
       <About>
         <div id="kopili">
           <div id="button_bg">
-            <h2>Kōpili</h2>
+            <Img_Kopili_About src={Kopili_About}/>
           </div>
           <TextKopili>
             <p>
@@ -22,7 +24,16 @@ Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade
           </TextKopili>
         </div>
 
-        <div id="ourTeam"></div>
+        <div id="ourTeam">
+            <div id="button_bg2">
+              <Img_Kopili_About src={Kopili_Time}/>
+            </div>
+            <div id="team">
+                <div id="cardTeam">
+                      
+                </div>
+            </div>
+        </div>       
       </About>
     </>
   );
