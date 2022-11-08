@@ -7,7 +7,7 @@ export const ContainerHeader = styled.div``;
 
 export const ContainerInitial = styled.div`
   display: flex;
-  height: 75vh;
+  height: 85vh;
   flex-direction: column;
   background-image: url(${Bg_initial});
   background-position: center;

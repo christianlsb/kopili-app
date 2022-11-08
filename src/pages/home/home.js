@@ -15,6 +15,7 @@
   import Christian_Photo from "../../assets/christian.svg"
   import Dudu_Photo from "../../assets/dudu.svg"
   import Thiago_Photo from "../../assets/thiago.svg"
+  import Footer from "../../components/footer/footer";
   function Home() {
     return (
       <>
@@ -54,7 +55,8 @@
                 <ConteudoText>
                   <h2>Artur Fagundes</h2>
                    <h3>Líder</h3>
-                   <p>Viadão bunito, afeminado, gazela saltitante, bem afeminado e consta na fila de espera para operação de troca de sexo.</p>
+                   <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning.
+</p>
 
                 </ConteudoText>
               </div>
@@ -65,7 +67,8 @@
                 <ConteudoText>
                   <h2>Christian Moreno</h2>
                   <h3>Front-End</h3>
-                  <p>Viadão bunito, afeminado, gazela saltitante, bem afeminado e consta na fila de espera para operação de troca de sexo.</p>
+                  <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning.
+</p>
 
                 </ConteudoText>
               </div>
@@ -75,8 +78,9 @@
                 </Img_Div>
                 <ConteudoText>
                   <h2>Eduardo Paixão</h2>
-                  <h3>Líder</h3>
-                  <p>Viadão bunito, afeminado, gazela saltitante, bem afeminado e consta na fila de espera para operação de troca de sexo.</p>
+                  <h3>Backend</h3>
+                  <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning.
+</p>
 
                 </ConteudoText>
               </div>
@@ -86,13 +90,15 @@
                 </Img_Div>
                 <ConteudoText>
                   <h2>Thiago Henrique</h2>
-                  <h3>Líder</h3>
-                  <p>Viadão bunito, afeminado, gazela saltitante, bem afeminado e consta na fila de espera para operação de troca de sexo.</p>
+                  <h3>Design e App</h3>
+                  <p>Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom diska. Jinesade bel när feras redorade i belogi. FAR paratyp i muvåning.
+</p>
                 </ConteudoText>
               </div>
             </div>
           </div>
         </About>
+        <Footer/>
       </>
     );
   }
