@@ -1,4 +1,4 @@
-import {Container,ContainerLeft,Cadastrar,ContainerHeaderTitle,ContainerLogin,FormLogin, ForgotPassowrd,ErrorMenssage} from './style'
+import {Container,ContainerLeft,Cadastrar,ContainerHeaderTitle,ContainerLogin,FormLogin, ForgotPassowrd,InputCadastro,ErrorMenssage} from './style'
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
@@ -32,10 +32,10 @@ function Login(){
                                     <form onSubmit={handleSubmit(onSubmit)}>
                                         <h2>Login</h2>
                                         <label>E-mail</label>
-                                        <input type="email" placeholder='E-mail' {...register("email")} error={errors.email?.message} />
+                                        <InputCadastro type="email" placeholder='' {...register("email")} error={errors.email?.message} />
                                         <ErrorMenssage>{errors.email?.message}</ErrorMenssage>
                                         <label>Senha</label>
-                                        <input type="password" placeholder='••••••••'  {...register("password")} error={errors.password?.message}/>
+                                        <InputCadastro type="password" placeholder=''  {...register("password")} error={errors.password?.message}/>
                                         <ErrorMenssage>{errors.password?.message}</ErrorMenssage>
                                         <ForgotPassowrd>Esqeceu sua senha?</ForgotPassowrd>
                                         <button>Entrar</button>

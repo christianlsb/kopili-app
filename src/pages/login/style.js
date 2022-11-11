@@ -20,25 +20,30 @@ export const ContainerLeft = styled.div`
 
 export const ContainerHeaderTitle = styled.div`
     
-        
     width: 80%;
     height: 15%;
     margin-bottom: 5%;
-    h2{
-        font-weight: 500;
-        font-size: 3em;
-        line-height: 81px;
-        display: flex;
-        align-items: center;
-        color: #FFFFFF;
-    }
-    h3{
-        font-size: 1em;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 27px;
-        color: #FFFFFF;
-    }
+        h2{
+            font-weight: 500;
+            font-size: 3em;
+            line-height: 81px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            @media(max-width: 1411px){
+                font-size: 45px;
+            }
+        }
+        h3{
+            font-size: 1em;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 27px;
+            color: #FFFFFF;
+            @media(max-width: 1411px){
+                font-size: 18px;
+            }
+        }
 `
 
 export const ContainerLogin = styled.div`
@@ -71,23 +76,9 @@ export const FormLogin = styled.div`
         letter-spacing: 0.1em;
         color: #FFFFFF;
         margin-top: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
     }
-    input{
-        border: none;
-        outline: none;
-        height: 44px;
-        background: #FFFFFF;
-        border-radius: 5px;
-        padding-left: 19px;
-        ::placeholder{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 33px;
-            letter-spacing: 0.1em;
-            color: #370001;
-        }
-    }
+   
 
     button{
         background: #000000;
@@ -104,6 +95,23 @@ export const FormLogin = styled.div`
     form{
         display: flex;
         flex-direction: column;
+    }
+`
+
+export const InputCadastro = styled.input`
+    border: none;
+    outline: none;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-left: 19px;
+    border: ${props => props.error ? '2px solid red' : 'none'};
+    ::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 33px;
+        letter-spacing: 0.1em;
+        color: #370001;
     }
 `
 
@@ -127,10 +135,9 @@ export const Cadastrar = styled(Link)`
     text-decoration: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25%;
+    margin-top: 5%;
 `
 
 export const ErrorMenssage = styled.p`
   color: red;
-  margin-top: 5px;
 `
