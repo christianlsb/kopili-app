@@ -5,6 +5,8 @@ import { Collapse } from 'react-collapse';
 import { ButtonDiv, Container, ContainerCards, TestCard } from './style';
 import CardPost from '../../components/card-post/CardPost';
 import AddIcon from "../../assets/icons/Vector.svg"
+import PostModal from '../../components/modal-post/PostModal';
+
 
 const FeedIntial = () => {
 
@@ -27,6 +29,8 @@ const FeedIntial = () => {
         }
     }
 
+
+
     useEffect(() => {
         console.log(window.screen.availWidth)
         disappearTheButtonPublish();
@@ -36,10 +40,11 @@ const FeedIntial = () => {
     return (
         <>
 
-            <GlobalContainer id={"page-wrap"} >
+            <GlobalContainer id={"page-wrap"}  >
 
                 <SideNavbar />
                 <Container>
+                  
                     <ContainerCards>
                         <CardPost />
                         <CardPost />
@@ -49,6 +54,7 @@ const FeedIntial = () => {
                         <CardPost />
                         <CardPost />
                     </ContainerCards>
+
                 
                         {
                             isLessThan1000  ? (

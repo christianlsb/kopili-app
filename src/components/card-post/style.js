@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HeaderCardImage from "../../assets/header-card.svg"
 
 export const CardContainer = styled.div`
     width: 500px;
@@ -33,9 +34,10 @@ export const CardContainer = styled.div`
 
 export const HeaderCard = styled.div`
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2); 
+    /* background-color: rgba(0, 0, 0, 0.2);  */
+    background:url(${HeaderCardImage}) cover no-repeat;
     height: 79px;
-    /* border: 2px solid blue; */
+    border: 3px solid blue;
     border-radius: 20px 20px 0px 0px;
     display: flex;
     justify-content: flex-start;
