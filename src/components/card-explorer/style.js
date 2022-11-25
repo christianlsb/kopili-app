@@ -58,12 +58,12 @@ export const BoxImageCard = styled.div`
     width: 100%;
     height: 100%;
     /* height: 500.73px; */
-    background-image: url("https://www.macau.rn.leg.br/images/galeria_em_artigos/image04_grd.png");
+    background-image: url(${props => props.image});
     background-size:cover;
     /* border: 2px solid red; */
     display: flex;
     align-items: flex-end;
-    border-radius: 23.8px 23.8px 23.8px 23.8px;
+    border-radius: 20px 20px 20px 20px;
     @media screen {
         @media (max-width: 500px){
             border-radius: 0px;

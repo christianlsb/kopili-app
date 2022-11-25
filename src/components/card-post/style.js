@@ -34,10 +34,10 @@ export const CardContainer = styled.div`
 
 export const HeaderCard = styled.div`
     width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.2);  */
+    background-color: rgba(0, 0, 0, 0.8); 
     background:url(${HeaderCardImage}) cover no-repeat;
     height: 79px;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     border-radius: 20px 20px 0px 0px;
     display: flex;
     justify-content: flex-start;
@@ -57,8 +57,9 @@ export const HeaderCard = styled.div`
 export const BoxImageCard = styled.div`
     width: 100%;
     height: 500.73px;
-    background-image: url("https://www.macau.rn.leg.br/images/galeria_em_artigos/image04_grd.png");
+    background-image: url(${props => props.image});
     /* border: 2px solid red; */
+    background-size: cover;
     display: flex;
     border-radius: 23.8px 23.8px 0px 0px;
     @media screen {

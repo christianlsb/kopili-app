@@ -7,7 +7,9 @@ export const SidebarContainer = styled.div`
     transition: left 0.3s ease-in-out;
     /* position: fixed; */
     z-index: 20;
- 
+    .border-logoff{
+        border: 2px solid rgba(146, 21, 21, 0.72);
+    }
    
     .menu{
         display: flex;
@@ -42,7 +44,7 @@ export const SidebarContainer = styled.div`
         margin: 30px;
         display: flex;
         flex-direction: row;
-        flex-wrap: w;
+        border: ${props => props.border_logoff};
         justify-content: flex-start;
         /* border: 2px black solid; */
         border-radius: 8px;
@@ -142,4 +144,20 @@ export const Line = styled.div`
     margin-left: auto;
     margin-right:auto;
     margin-top: 5px;
+`
+
+
+export const LogoffContainer = styled.div`
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        z-index: 100000;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0, 0.3);
+        .logOffModal{
+
+        }
+
 `

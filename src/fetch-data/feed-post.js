@@ -1,7 +1,6 @@
-import { useState } from "react";
 import Api from "./api";
 
-const FeedPostsData = async function(){
+const FetchTheFeedData = async function(){
 
     const response = await Api.get(`page/feed/username=${localStorage.getItem("user_logged")}`, {
         headers: {
@@ -9,11 +8,13 @@ const FeedPostsData = async function(){
         }
     })
 
-    const data = await response.data;
+    const data = await response.data
 
     return data;
 
 }
 
 
-export default FeedPostsData;
+export default FetchTheFeedData;
+
+

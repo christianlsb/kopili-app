@@ -14,6 +14,7 @@ import { HiXCircle } from "react-icons/hi"
 import Thiago from "../../assets/thiago.svg"
 import AddIcon from "../../assets/icons/Vector.svg"
 import { useLocation } from "react-router-dom";
+import { FindUserData } from "../../fetch-data/find-user";
 
 
 
@@ -22,6 +23,7 @@ const MobileSidebar = () => {
     const [isHome, setIsHome] = useState("");
     const [isExplorer, setIsExplorer] = useState("")
     const [isPerfil, setIsPerfil] = useState("")
+    const [user_data, setUserData] = useState({});
 
     const [isOpen, setIsOpen] = useState(true);
     const [isClose, setIsClose] = useState(false);
@@ -72,12 +74,17 @@ const MobileSidebar = () => {
         setIsOpen(false)
     }
 
+    const fetchTheUserData = async ()=>{
+        const data = await FindUserData();
+        setUserData(data);
+    }
 
     useEffect(() => {
         handleIsHome();
         handleIsExplorer();
         handleIsPerfil();
         disappearTheSidebar();
+        fetchTheUserData();
     }, [])
 
 
@@ -95,7 +102,7 @@ const MobileSidebar = () => {
                                 <PhotoAndUsernameBox>
                                     <BoxPhotoAndUsername height={"100%"}>
                                         <ImageUserField
-                                            src={Thiago}
+                                            src={user_data.image_url}
                                             width={"100px"}
                                             height={"100px"}
 
@@ -106,7 +113,7 @@ const MobileSidebar = () => {
                                         />
                                     </BoxPhotoAndUsername >
                                     <BoxPhotoAndUsername height={"60%"} >
-                                        <h2 className='username'>Chines443</h2>
+                                        <h2 className='username'>{user_data.username}</h2>
                                     </BoxPhotoAndUsername>
                                 </PhotoAndUsernameBox>
                                 <Menu className='menu' >

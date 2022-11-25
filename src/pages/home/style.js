@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Bg_initial from "../../assets/bg_initial.svg";
+import Bg_initial from "../../assets/home-image.png";
 import Bg_about from "../../assets/about_kopili.svg";
 import Bg_verde from "../../assets/bglhverde.svg";
 import Bg_azul from "../../assets/bglhazu.svg";

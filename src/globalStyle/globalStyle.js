@@ -55,6 +55,7 @@ export const ImageUserField = styled.img`
     border-radius: 100px;
     border: ${props => props.border};
     padding:${props => props.padding};
+    margin-left:${props =>props.margin_left} ;
    @media screen {
         @media (min-height: 900px){
             width: ${props => props.min_height_900_width};
@@ -65,7 +66,7 @@ export const ImageUserField = styled.img`
 `;
 
 export const ButtonPublish = styled.button`
-    position: fixed;
+    position: ${props => props.btn_position};
     width: 143px;
     border-radius: 17px;
     border: transparent;
@@ -75,7 +76,7 @@ export const ButtonPublish = styled.button`
     font-size:17px;
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    cursor: ${props => props.cursor};
     align-items: center;
     z-index: 90;
     margin-right: ${props => props.margin};

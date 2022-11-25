@@ -11,8 +11,8 @@ function Header() {
         </div>
 
         <div className="right">
-          <Button>Crie uma conta</Button>
-          <Button>Acesse sua conta</Button>
+          <Button to="/register" >Crie uma conta</Button>
+          <Button to="/login" >Acesse sua conta</Button>
         </div>
       </ContainerHeader>
     </>
